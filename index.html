@@ -24,7 +24,6 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Byungjin Kwon</span>
             <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="https://github.com/mulbom/mulbom/blob/main/s/KakaoTalk_20240327_173022367.jpg?raw=true"
                     alt="..." /></span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -33,7 +32,6 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Main</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#자기소개">자기소개</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project">프로젝트</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">스킬</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
@@ -49,10 +47,14 @@
                     <span class="text-primary">Kwon</span>
                 </h1>
                 <div class="subheading mb-5">
-                    대구광역시 팔공로 241, a - 760 · 010 - 6344 - 9122 ·
+                    대구광역시 달성군 · 010 - 6344 - 9122 ·
                     <a href="mailto:name@email.com">qudwls0315gmail.com</a>
                 </div>
-                <p class="lead mb-5">항상 끊임없이 공부하고 성장하기 위해 노력하며, 최고의 결과물을 위해 노력하는 중입니다.</p>
+                <p class="lead mb-5">
+					C++ 기반 산업용 장비 소프트웨어 개발 경험을 보유하고 있습니다.
+					<br>Linux / Qt 환경에서 장비 GUI, 데이터 처리 및 통신 기능 개발과
+					<br>기존 시스템의 기능 개선 업무를 수행했습니다.
+				</p>
                 <div class="social-icons">
                     <a class="social-icon" href="https://github.com/mulbom"><i class="fab fa-github"></i></a>
                     <a class="social-icon" href="https://solved.ac/profile/qudwls0315"><i
@@ -60,81 +62,114 @@
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
-        <!-- 자소서 -->
-        <section class="resume-section" id="자기소개">
+		<!-- TECC -->
+		<section class="resume-section" id="project">
             <div class="resume-section-content">
-                <h2 class="mb-5">자기소개서</h2>
+                <h1 class="mb-5" style="color: black;">TECC Array Tester</h1>
+				<div class="subheading mb-3">작업 환경 : Linux Fedora 20 / Qt 4.8.6</div>
+				<div class="subheading mb-3">업무 : 각 사이트 SW 문제 대응 / SW 추가 개발</div>
+				<p>24.06 - 26.02</p>
+				<p>Tester 흐름도<p>
+				<!-- pdf 파일없음(검수 제외) -->
+				<iframe
+					src="./HMI.pdf" 
+					width="100%"
+					height="800px"
+					style="border: none;">
+				</iframe>
+				<!---->
+                <br>
+                <h2 class="mb-5"></h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <div class="subheading mb-3">자기소개</div>
-                        <p>전문직 종사 도중 하고싶은 일을 해보기위해 경북산업직업학교에 개발자과정으로 입학하게 되었습니다.<br>
-                            입학 후에는 꾸준한 알고리즘 연습을 통해 현업에 뛰어들 준비를 하였습니다.
-                            개발자로서의 경력은 주식회사 티이씨씨의 ARRAY TESTER 팀으로 입사하여 fedora linux환경에서 QT-C++을 사용하여 신규 기능 개발 및 유지보수 업무를 하였으며<br>
-                            유지보수, 고정환경에서의 개발 뿐 아닌 linux환경의 시스템 windows로 이전, 업데이트 프로젝트 또한 참여하였으며,<br>
-                            이외에도 dbus, modbus 통신 등을 왈용하여 추가 외부장비 통신 제어 등의 소규모 개발, HW 구조 응용 SW를 통한 CLK 분할 프로젝트 등 다양한 프로젝트에 참여하여 진행하였습니다.
-                            <br><br>
-                            짧다면 짧은 경험이지만 최대한 활용하여 열정과 노력으로 동료들과 함께 협업하고 회사에 미약하게나마 도움이 될 준비가 되어 있습니다.
-                        </p>
+                        <h3 class="mb-0">Multi Pattern</h3>
+						<div class="subheading mb-3">Panel의 복잡성 증가로 테스트 영역 또한 넓어지는 것에 맞추기 위함</div>
+                        <div>
+                            <a>기존 2pattern 테스터의 최대 6pattern 테스트화</a>
+							<a> - GUI 업데이트와 테스트 결과 검출 로직, 결과값 뷰어, 데이터 전송 부분 프로토콜에 맞춰 로직 수정</a>
+							<p>담당 부분</p>
+							<p>1. 기존 Recipe 로드 및 Multi Pattern 대응 데이터 변환 로직 개발
+							<br>2. HMI 테스트 결과 데이터 저장 및 처리 로직 개발
+							<br>3. 테스트 결과 검출 및 데이터 전송 로직 수정</p>
+                        </div>
+                        <p>24.06 - 24.11</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2024.03.27</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+				<div>
                     <div class="flex-grow-1">
-                        <div class="subheading mb-3">성장과정</div>
-                        <p>저희 집안은 그리 넉넉하진 않은 집안이었지만, 그렇기 때문일까 다른 집안에선 컴퓨터 활동을 지양하던 시대에 맞지 않게 저희 집은 제약을 두지 않았습니다.
-                            거기에 늘 무언가를 뜯어 파악하던 성향이 더해져 그때 당시 프로그램들의 txt파일,ini파일 등을 열어보며 조작할 수 있는 수치 등 기본적인 개념들을 습득하였습니다.
-                            경험을 통해 컴퓨터와 소프트웨어에 대한 관심이 생겼고, 늘 꿈으로는 개발자의 길을 선택하게 되었습니다.
-                            대학교에서는 컴퓨터 공학을 전공하진 않았으나, 취미로나마 즐기며 이론적인 지식뿐만 아니라 실제 구독을 받고 프로그램을 제작 판매하며 실무 능력을 키웠습니다.
-                            졸업 후에는 완전히 다른 분야의 일을 해왔지만 늘 꿈으로만 가지고 있던 개발자라는 길에 뛰어들어 보기 위해 국가 기관에서 주최하는 교육 프로그램을 통해 언어를
-                            활용하는 법을 전문적으로 배우고 다양한 프로그램을 개발하고, 팀 프로젝트를 통해 협업과 소통의 중요성을 깨달았습니다.
-                            또한, 다른 분야의 경험들도 개발자로서의 역량을 향상시키는 데 큰 도움이 될 것이라 생각합니다.
-                            개발자로서의 역량을 더욱 향상시키기 위해 지속적인 자기 발전에 힘쓰고 있습니다.
-                            새로운 기술과 도구에 대한 학습을 게을리하지 않으며, 다양한 프로젝트에 도전하여 실무 경험을 쌓고 있습니다.
-                            항상 성장하고 발전하는 개발자의 자세를 갖추고 있으며, 기업의 성공에 기여하고자 합니다.
-                        </p>
+                        <h3 class="mb-0">Data Remap</h3>
+						<div class="subheading mb-3">각 Viewer에서 Panel의 리매핑된 데이터로 인해 직관성 및 데이터 꼬임으로 인한 요청</div>
+						<p>Remap된 Panel의 테스트 결과 데이터를 원래 배치 기준으로 재매핑하는 기능 개발</p>
+						<br>
+                        <p>24.07 - 25.01</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2024.03.27</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+				<div>
                     <div class="flex-grow-1">
-                        <div class="subheading mb-3">성격의 장단점</div>
-                        <p>저는 깔끔하고 체계적으로 일처리를 하는 성격을 가지고 있습니다. 이 특징은 개발 과정에서 코드의 가독성과 유지보수성에 중점을 두는데 기인합니다. 코드를 정리하고
-                            다듬음으로써 협업을 용이하게 만들어 다른 개발자들도 쉽게 이해할 수 있도록 노력하고 있습니다.
-
-                            개발을 시작하기 전에는 항상 철저한 계획을 세우고 진행합니다. 이를 통해 예상치 못한 문제에 대비하고 업무를 효율적으로 수행할 수 있습니다. 그러나, 이러한 체계적인
-                            성격이 때로는 타인에게 부담스러움으로 느껴질 수 있다는 점을 알고 있습니다. 따라서 협업 시에는 제 성격을 유연하게 조절하여 상황에 맞게 행동하고 있습니다.
-
-                            또한, 제 성격의 문제점을 인지하고 타협하는 자세를 가지고 있습니다. 협업 중에는 상황에 따라 유연하게 대처하며, 제 장점을 최대한 살리면서도 팀원들과 원활한 소통과
-                            협업을 이끌어내고자 노력하고 있습니다. 이러한 노력을 통해 더 나은 개발자로 성장하고, 팀과의 협업에서 더 큰 성과를 이루고자 합니다.
-                        </p>
+                        <h3 class="mb-0">MB Skip</h3>
+						<div class="subheading mb-3">불량 MB의 결과값으로 인한 test 결과 이상으로 인한 요청(폐쇄성으로 인해 MB 반출 수리가 불가)</div>
+						<p>비정상 상태의 MB가 장비 내 장착되어 있을 시 Recipe 설정 GUI에서 해당 기능 활성 시 테스트에서 해당 MB를 SKIP하도록 로직 추가</p>
+						<br>
+                        <p>25.03</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2024.03.27</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
+				<div>
                     <div class="flex-grow-1">
-                        <div class="subheading mb-3">입사 후 포부</div>
-                        <p>저는 귀사에 입사하여 업무에 최선을 다해 기여하고, 더 나아가 제 능력을 계속해서 향상시켜 나가고자 합니다. 처음 몇 달은 기존 시스템 및 프로젝트를 완전히 이해하고,
-                            팀 내 협업을 강화하여 소프트웨어 개발 생산성을 향상시키는 데에 중점을 둘 것입니다.
-
-                            한편으로는 새로운 기술과 트렌드를 주시하고, 업무에 적용하여 혁신적인 결과물을 도출하고자 합니다. 증강 현실(AR) 및 인공지능(AI) 분야에 대한 관심과 학습을
-                            지속적으로 이어가며, 이를 팀에 적용하여 미래 지향적인 프로젝트에 기여하고 싶습니다.
-
-                            또한, 지속적인 소통과 피드백을 통해 팀원들과의 협업을 강화하고, 서로의 강점을 최대한 발휘하여 효율적인 프로젝트 진행을 지향할 것입니다. 이를 통해 팀의 목표
-                            달성뿐만 아니라 팀원 개개인의 성장에도 기여하고자 합니다.
-
-                            마지막으로, 회사의 가치와 목표에 부합하는 솔루션을 개발하고 서비스를 지속적으로 향상시켜 나가는 것이 제 큰 목표입니다. 함께 노력하며 성공을 경험하고, 회사의
-                            성장에 기여하는 개발자로써 늘 발전해 나가겠습니다.</p>
+                        <h3 class="mb-0">Irregular MUX</h3>
+						<p>기존 규칙적으로 배치되던 MUX의 비규칙적 배치 대응 업데이트</p>
+						<p>test 결과값의 비정규 MUX 재배치 및 토탈 산출 로직 담당</p>
+						<br>
+                        <p>25.11 - 26.01</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2024.03.27</span></div>
+                </div>
+				<div>
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">기타 소규모 프로젝트</h3>
+						<div>
+							<div class="subheading mb-3">TAVG viewer</div>
+							<p> - Test 당시 각 MB 별 전압avg를 각 Block(MB묶음)별로 Tavg 산출 및 저장, 저장 내용 시각화하여 볼 수 있는 Viewer 개발 및 값 산출/저장 로직 추가</p><br>
+						</div>
+						<div>
+							<div class="subheading mb-3">Flowmap crosshair</div>
+							<p> - Flowmap Viewer 사용 시 각 좌표의 값 확인을 위해 포인터 이동 시 포인터 위치의 가독성 개선을 위한 기능 추가</p>
+						</div>
+						<div>
+							<div class="subheading mb-3">고객사 사이트 통신 프로토콜 수정 및 파싱 시트 작성</div>
+							<p> - 요구사항에 맞춰 전송값 추가 로직 업데이트 및 변경된 프로토콜 시트 / 파싱 시트 작성</p>
+						</div>
+						<div>
+							<div class="subheading mb-3">recipe to XML - 미적용</div>
+							<p> - 기존 INI 기반 Recipe 로드 구조를 XML 기반으로 전환
+								<br>- 로딩 시간 단축 및 메모리 사용량 절감
+							</p>
+						</div>
+						<div>
+							<div class="subheading mb-3">Accura 2300 modbus_TCP</div>
+							<p> - ACCURA 2300을 이용 TCP/IP 통신으로 데이터시트의 프로토콜에 따라 전류량/전압/온도 그래프 및 수치로 시각화하여 상태체크가 가능하도록 개발</p>
+							<a class="social-icon" href="https://github.com/mulbom/accura2300_modbus_TCP">프로토 타입<i class="fab fa-github"></i></a>
+						</div>
+						<div>
+							<div class="subheading mb-3">Data 전송 용량 업데이트</div>
+							<p> - 기존 데이터 전송 용량 제한 개선을 위한 라이브러리 및 전송 로직 수정</p>
+						</div>
+						<div>
+							<div class="subheading mb-3">CLK 분할 로직 개발</div>
+							<p>
+								- 요구사항에 따른 CLK 분할 로직 구현<br>
+								- 개발 및 자체 테스트 완료<br>
+								- 퇴사 시점에 현장 장비 적용 여부는 미확인
+							</p>
+						</div>
+						<br>
+                        <div class="flex-shrink-0"><span class="text-primary">24.06 - 26.02</span></div>
+                    </div>
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
-        <!-- 프로젝트 -->
+        <!-- 학습 -->
         <section class="resume-section" id="project">
             <div class="resume-section-content">
-                <h1 class="mb-5" style="color: red;">Project</h1>
+                <h1 class="mb-5" style="color: black;">기술 학교 학습</h1>
                 <br>
                 <h2 class="mb-5">KB</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -230,18 +265,6 @@
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">23.09.27</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Qt 4.8.6(fedora linux 20)</h3>
-                        <div class="subheading mb-3">Accura 2300 modbus_TCP</div>
-                        <div>
-                            <a class="social-icon" href="https://github.com/mulbom/accura2300_modbus_TCP"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                        <p>25.11</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">24.01</span></div>
-                </div>
             </div>
         </section>
         <hr class="m-0" />
@@ -257,35 +280,15 @@
                     <img src="https://img.shields.io/badge/c-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
                     <img
                         src="https://img.shields.io/badge/diagrams.net-F08705?style=for-the-badge&logo=diagrams.net&logoColor=white">
-
-                    <img
-                        src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-                    <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white">
-                    <img
-                        src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
-
                     <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
                     <img src="https://img.shields.io/badge/java-00599C?style=for-the-badge&logo=java&logoColor=white">
                     <img
                         src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
                     <img src="https://img.shields.io/badge/json-000000?style=for-the-badge&logo=json&logoColor=white">
                     <img
-                        src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
-
-                    <img
                         src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white">
                     <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
                     <img src="https://img.shields.io/badge/mssql-F1007E?style=for-the-badge&logo=mssql&logoColor=white">
-                    <img
-                        src="https://img.shields.io/badge/visualstudio-5C2D91?style=flat-square&logo=visualstudio&logoColor=white" />
-                    <img
-                        src="https://img.shields.io/badge/visualstudiocode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" />
-                    <img
-                        src="https://img.shields.io/badge/eclipseide-2C2255?style=flat-square&logo=eclipseide&logoColor=white" />
-                    <img
-                        src="https://img.shields.io/badge/pycharm-000000?style=flat-square&logo=pycharm&logoColor=white" />
-                    <img
-                        src="https://img.shields.io/badge/intellijidea-000000?style=flat-square&logo=intellijidea&logoColor=white" />
                 </ul>
             </div>
         </section>
@@ -293,7 +296,7 @@
         <!-- Awards-->
         <section class="resume-section" id="awards">
             <div class="resume-section-content">
-                <h2 class="mb-5">Awards & Certifications</h2>
+                <h2 class="mb-5">기술 학교 수상</h2>
                 <ul class="fa-ul mb-0">
                     <li>
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
